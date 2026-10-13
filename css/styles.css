@@ -1,5 +1,5 @@
 ﻿/* ─────────────────────────────────────────────────────────────────
-   CIKÖSZ Önkormányzat – Lost City
+   LSGOV Önkormányzat – Los Santos
    Lefordított stíluslap (css/styles.css)
    Forrás: css/styles.scss
    Fordítás: sass css/styles.scss css/styles.css --style=expanded
@@ -854,16 +854,33 @@ nav ul li a:hover { background: var(--gold); color: var(--dark); }
 }
 #jelentkezes .section-title { color: var(--gold); }
 #jelentkezes .section-title .underline { background: linear-gradient(90deg, var(--gold), var(--olive)); }
+.join-intro {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: var(--parchment);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.join-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (max-width: 760px) {
+  .join-options { grid-template-columns: 1fr; }
+}
 .join-box {
   position: relative;
   z-index: 1;
-  display: inline-block;
-  max-width: 680px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: rgba(255,255,255,.06);
   border: 1px solid rgba(192,192,192,.3);
   border-radius: 14px;
-  padding: 3rem 2.5rem;
+  padding: 2.5rem 2rem;
   backdrop-filter: blur(6px);
   box-shadow: 0 8px 40px rgba(0,0,0,.35);
 }
@@ -1112,4 +1129,3 @@ footer {
 /* ── LOGO SEGÉDOSZTÁLYOK ────────────────────────────────────────── */
 .logo-img   { display: block; width: 100%; height: 100%; object-fit: contain; }
 .logo-circle { border-radius: 50%; object-fit: cover; }
-

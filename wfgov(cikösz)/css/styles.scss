@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────
-//  CIKÖSZ Önkormányzat – Lost City
+//  LSGOV Önkormányzat – Los Santos
 //  Fő stíluslap (SCSS forrás)
 //  Fordítás: sass css/styles.scss css/styles.css --style=expanded
 // ─────────────────────────────────────────────────────────────────
@@ -800,13 +800,13 @@ nav ul {
 .join-box {
   position: relative;
   z-index: 1;
-  display: inline-block;
-  max-width: 680px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: white-a(.06);
   border: 1px solid gold-a(.3);
   border-radius: 14px;
-  padding: 3rem 2.5rem;
+  padding: 2.5rem 2rem;
   backdrop-filter: blur(6px);
   box-shadow: 0 8px 40px dark-a(.35);
 
@@ -834,6 +834,24 @@ nav ul {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.join-intro {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: $parchment;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.join-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  @media (max-width: 760px) { grid-template-columns: 1fr; }
 }
 
 .join-steps {

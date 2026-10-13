@@ -1,11 +1,11 @@
 # images/
 
-Ide töltsd fel a CIKÖSZ logót és egyéb képeket.
+Ide töltsd fel az LSGOV logóját és egyéb képeket.
 
 ## Ajánlott fájlok:
 - `logo.png`        – Fő logó (ajánlott: 512×512px, átlátszó háttér)
 - `logo-circle.png` – Körvágott verzió (navigáció és avatárokhoz)
-- `favicon.ico`     – Böngésző ikon (a projekt gyökerébe is kerüljön egy másolat)
+- `lsgov.svg`       – Jelenlegi LSGOV-jelvény; az oldal ezt használja logóként és ikonként
 
 ## Logó beillesztése az index.html-be:
 Keresd meg ezeket a elemeket és cseréld le a betűt képre:
@@ -16,7 +16,7 @@ Keresd meg ezeket a elemeket és cseréld le a betűt képre:
 <div class="nav-seal">C</div>
 <!-- Ezt írd: -->
 <div class="nav-seal">
-  <img src="images/logo-circle.png" alt="CIKÖSZ logó" />
+  <img src="images/logo-circle.png" alt="LSGOV logó" />
 </div>
 ```
 
@@ -26,7 +26,7 @@ Keresd meg ezeket a elemeket és cseréld le a betűt képre:
 <div class="hero-crest">C</div>
 <!-- Ezt írd: -->
 <div class="hero-crest">
-  <img src="images/logo.png" alt="CIKÖSZ pecsét" />
+  <img src="images/logo.png" alt="LSGOV pecsét" />
 </div>
 ```
 
